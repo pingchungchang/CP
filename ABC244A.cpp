@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define pll pair<ll,ll>
+#define fs first
+#define sc second
+#define io ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+int main(){
+	string s;
+	int n;
+	cin>>n;
+	cin>>s;
+	cout<<*s.rbegin();
+}
+

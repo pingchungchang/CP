@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define pll pair<ll,ll>
+#define pii pair<int,int>
+#define fs first
+#define sc second
+#define io ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define ld long double
+#define _all(T) T.begin(),T.end()
+ll n;
+const ll mod = 1LL<<31;
+ll buf[2][2];
+ll a[2][2],b[2][2];
+
+
+int main(){
+	
+}
+

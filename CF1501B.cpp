@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define pll pair<ll,ll>
+#define pii pair<int,int>
+#define fs first
+#define sc second
+#define io ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define ld long double
+#define _all(T) T.begin(),T.end()
+void solve(){
+	ll n;
+	cin>>n;
+	vector<ll> all(n+1,0);
+	for(int i = 0;i<n;i++){
+		int k;
+		cin>>k;
+		if(k>i){
+			all[0]++;
+			all[i+1]--;
+		}
+		else{
+			all[i-k+1]++;
+			all[i+1]--;
+		}
+	}
+	int tmp = 0;
+	for(int i = 0;i<n;i++){
+		tmp += all[i];
+		if(tmp>0){
+			cout<<1<<' ';
+		}
+		else cout<<"0 ";
+	}
+	cout<<'\n';
+	return;
+}
+int main(){
+	io
+	int t;
+	cin>>t;
+	while(t--)solve();
+}
+

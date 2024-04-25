@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    string s = "UGYTI";
+    while(cin>>n){
+        cout<<s[n%5];
+        cout<<endl;
+    }
+}
