@@ -9,12 +9,20 @@ using namespace std;
 #define tlll tuple<ll,ll,ll>
 
 
-void solve(){
-}
 
 int main(){
 	ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-	int t;cin>>t;
-	while(t--)solve();
-	cout<<"HEHE"<<endl;
+	int sum = 0;
+	for(int i = 0;i<9;i++){
+		int k;
+		cin>>k;
+		sum += k;
+	}
+	sum++;
+	for(int i = 0;i<8;i++){
+		int k;
+		cin>>k;
+		sum -= k;
+	}
+	cout<<max(0,sum);
 }

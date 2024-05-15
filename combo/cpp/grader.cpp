@@ -22,7 +22,6 @@ void wrong_answer(const char *MSG) {
 }  // namespace
 
 int press(std::string p) {
-	printf("guessed:%s\n",p.c_str());
   if (++num_moves > MAX_NUM_MOVES) {
     wrong_answer("too many moves");
   }
